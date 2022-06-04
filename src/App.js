@@ -1,11 +1,14 @@
 import React from "react";
 import ToolBar from "./components/ToolBar";
-
+// import Footer from "./components/Footer";
+import Main from "./pages/Main";
+import "./styles/main.css";
 const App = () => {
   return (
-    <div>
+    <div style={{ minWidth: 600, margin: "auto" }}>
       <ToolBar></ToolBar>
-      <h2>커피 내기</h2>
+      <Main></Main>
+      {/* <Footer></Footer> */}
     </div>
   );
 };
