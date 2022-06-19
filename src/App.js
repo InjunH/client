@@ -3,6 +3,7 @@ import ToolBar from "./components/ToolBar";
 import Footer from "./components/Footer";
 import Main from "./pages/Main";
 import RegistJoinUser from "./pages/RegistJoinUser";
+import ShowJoinUser from "./pages/ShowJoinUser";
 import { Switch, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -15,6 +16,7 @@ const App = () => {
       {/* <Main></Main> */}
       <Switch>
         <Route path="/join/user" exact component={RegistJoinUser}></Route>
+        <Route path="/show/user" exact component={ShowJoinUser}></Route>
         <Route path="/" exact component={Main}></Route>
       </Switch>
       <Footer></Footer>

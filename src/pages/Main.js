@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
@@ -25,7 +26,18 @@ const Main = () => {
       <div className="divider"></div>
       <div className="sub-area">
         <div>참여하기</div>
-        <div>참여자 추가 하기</div>
+        <div>
+          <div>
+            <Link to="/join/user">
+              <span style={{ float: "right" }}>참가자 추가하기</span>
+            </Link>
+          </div>
+          <div>
+            <Link to="/show/user">
+              <span style={{ float: "right" }}>참가자 목록보기</span>
+            </Link>
+          </div>
+        </div>
         <div>누적 통계 보기</div>
       </div>
     </div>

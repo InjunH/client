@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import CustomInput from "../components/CustomInput";
 import { toast } from "react-toastify";
 import axios from "axios";
+import ShowJoinUser from "./ShowJoinUser";
 
 const RegistJoinUser = () => {
   const [userName, setUserName] = useState("");
@@ -66,16 +67,7 @@ const RegistJoinUser = () => {
           </form>
         </div>
         <div>
-          <h3>순위</h3>
-          <ul>
-            <li>1위 황인준</li>
-            <li>1위 황인준</li>
-            <li>1위 황인준</li>
-            <li>1위 황인준</li>
-            <li>1위 황인준</li>
-            <li>1위 황인준</li>
-            <li>1위 황인준</li>
-          </ul>
+          <ShowJoinUser></ShowJoinUser>
         </div>
       </div>
     </div>
